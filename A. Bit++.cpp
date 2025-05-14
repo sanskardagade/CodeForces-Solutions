@@ -21,7 +21,7 @@ int main(){
         else x--;
     }
 
-    cout<<x<<"\n";
+    cout<<x<<endl;
     return 0;
 
 
