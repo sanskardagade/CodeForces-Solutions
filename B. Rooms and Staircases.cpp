@@ -1,4 +1,5 @@
 #include<iostream>
+#include<algorithm>
 using namespace std;
 
 void solve(){
@@ -9,8 +10,8 @@ void solve(){
     cin>>s;
 
     int ans = n;
-    int c = 0;
 
+    int c = 0;
     for(int i=0;i<n;i++){
         c++;
         if(s[i] == '1'){
@@ -19,6 +20,18 @@ void solve(){
         }
     }
     ans = max(ans,c);
+
+    reverse(s.begin(),s.end());
+    c = 0;
+    for(int i=0;i<n;i++){
+        c++;
+        if(s[i] == '1'){
+            ans = max(ans,(i+1)*2);
+            c++;
+        }
+    }
+    ans = max(ans,c);
+    
     cout<<ans<<"\n";
 }
 

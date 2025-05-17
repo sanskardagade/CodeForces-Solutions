@@ -1,0 +1,1 @@
+{"name":"Local: A","url":"c:\\Users\\sansk\\Documents\\CP\\A. The New Year Meeting Friends.cpp","tests":[{"id":1747466679228,"input":"7 1 4\n","output":"6"},{"id":1747466692071,"input":"30 20 10\n","output":"20"}],"interactive":false,"memoryLimit":1024,"timeLimit":3000,"srcPath":"c:\\Users\\sansk\\Documents\\CP\\A. The New Year Meeting Friends.cpp","group":"local","local":true}
