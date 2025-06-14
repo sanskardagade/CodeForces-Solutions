@@ -1,0 +1,48 @@
+Time Complexities 
+
+Linear Search = O(n)
+Binary Search = O(log2 n)
+
+Binary Search -> Array should be sorted 
+                 Based on divide on Conquer 
+                 uses two pointer (l=0,r=n-1,m=((l+r)/2) orr (l+ (r-l)/2))
+
+Time Complexitie -> Time taken by algorithm as a function of input (it depends on number of operations )
+        no of operations ~= (directly proportional) time Complexitie
+        
+Best Time Complexitie = O(1)
+Worst Time Complexitie = O(log2 n)
+
+
+Ternary Search -> here we diide in theree sections 
+left mid1 mid2 right 
+mid1 = l + (r-l)/3 
+mid2 = r - (r-l)/3 
+TC = log(log3 n)
+
+
+##LOWER BOUND AND UPPER BOUND
+
+Lower Bound -> Returns the smallest index whose value is greater than equal to given target 
+arr = 2 5 11 23 41 50 63
+target = 11 -> 2
+target = 30 -> 4
+target = 1 -> 0
+target = 70 -> 7
+ 
+Upper Bound -> Returns the smallest index whose value is greater than given target 
+arr = 2 5 11 23 41 50 63
+target = 11 -> 3
+target = 30 -> 4
+target = 1 -> 0
+target = 70 -> 7
+
+
+#Remember -> The elements which are not present in array that number has same Upper Bound and Lower Bound
+means that if lower bound and upper bound are same the element is not present in the array 
+     
+In C++ we have a seperate function for Lower Bound and Upper Bound of an array
+    int lb = lower_bound(nums.begin(),nums.end(),target);
+    int ub = upper_bound(nums.begin(),nums.end(),target);
+
+// BINARY SEARCH ON ANSWER
