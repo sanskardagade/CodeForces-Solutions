@@ -1,0 +1,13 @@
+->Bit Mainipulation
+->Bitwise and Shift Operators
+->OR,AND,XOR and NOT
+->Left Shift and Right Shift Operators
+->Tricks and Properties of Bitwise Operators
+
+##Conversions
+DECIMAL->BINARY
+BINARY->DECIMAL
+
+##BINARY NUMBER (operators used)
+BITWISE Operators :- OR(|) AND(&) XOR(^) NOT(~)
+SHIFT Operators :- 
