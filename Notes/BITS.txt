@@ -11,3 +11,149 @@ BINARY->DECIMAL
 ##BINARY NUMBER (operators used)
 BITWISE Operators :- OR(|) AND(&) XOR(^) NOT(~)
 SHIFT Operators :- 
+
+
+
+OR(|) Operator : BITWISE OR
+    If any of the bit is 1 -> 1
+    else -> 0
+
+
+TRUTH TABLE 
+A   B    A|B
+0   0     0
+0   1     1
+1   0     1
+1   1     1
+
+
+AND(&) Operator : BITWISE AND
+    If all the bit are 1 -> 1
+    else -> 0
+
+
+TRUTH TABLE 
+A   B    A|B
+0   0     0
+0   1     0
+1   0     0
+1   1     1
+
+
+
+A = 22 = 10110 
+B = 19 = 10011
+A | B = 10111 = 23 
+A & B = 10010 = 18
+
+
+(22|19) = 23
+(22&19) = 18
+
+(A|B) >= A,B
+(A&B) <= A,B
+
+IMP -> A+B = (A|B)+ (A&B) 
+
+
+
+XOR(^) Operator:
+    When there are odd number of 1s -> 1
+    else -> 0
+
+TRUTH TABLE 
+A   B    A|B
+0   0     0
+0   1     1
+1   0     1
+1   1     1
+
+
+PROPERTIES OF XOR 
+1. Two equal numbers XOR is always 0   -> x ^ x = 0
+2. x ^ 0 = x
+   x | 0 = x
+   x & 0 = 0
+
+3. a^b = c
+   b^c = a
+   c^a = b
+
+
+NOT Operator (~)
+    Unary operator 
+    0 -> 1;
+    1 -> 0
+
+Jitna asan he utna nai he 
+
+
+##Remember 
+~n = -(n+1)
+
+
+Left Shift operator(<<)
+    One extra 0 is added at the end 
+        (x<<1) = 2 * x
+        (x<<2) = 4 * x
+
+        (x<<a) = a zeros at the last 
+        (x<<a) = (x * 2 ki power a)
+
+
+Right Shift operator(<<)
+    One bit is removed from the end     
+        (x>>a) = (x / 2 ki  power a)
+
+**TRICKS AND PROPERTIES
+1. A + B = (A | B) + (A & B)
+2. x^0 = x , x^x = x
+
+
+SET/FLIP/CLEAR Bit 
+1. SET Bit                                                                  1 0 1 1 0 0 1
+    Suppose you want to set the second bit                                  6 5 4 3 2 1 0
+    x | (1<<2)    
+
+2. Clear Bit 
+    Suppose you want to clear the third bit
+    x & (~(1<<3))
+
+3. FLIP Bit     
+    Suppose you want to flip the fifth bit
+    x ^ (1<<5)
+
+
+
+If (x & 1) == 1 -> Number is odd
+           == 0 -> Number is even
+
+
+Check if number is power of 2
+    If [n & (n-1) == 0] -> POWER OF TWO 
+
+Suppose two numbers (n,k)
+    you have to check n/2^k 
+        then 
+            (n & (powerof2 -1))  == 0      ""NOT IMPORTANT ""
+
+
+
+Suppose we want to unset the rightmost bit 
+    101100 = 44 
+        then simply do (n & (n-1))
+
+
+Brian Kernighan's Algorithm 
+    To count the number of set bits in the expression
+
+    int countSetBits(int n){
+        int count = 0;
+        while(n){
+            n = (n & (n-1));
+            count++;
+        }
+        return count;
+    }
+
+    
