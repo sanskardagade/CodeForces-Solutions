@@ -1,0 +1,10 @@
+Greedy -> In data structures and algorithms (DSA), a greedy algorithm is a problem-solving technique that makes the best choice at each step to reach the optimal solution.
+
+
+TWO POINTERS
+SLIDING WINDOW 
+PREFIX SUM 
+STRINGS 
+UNDERSTANDING CONCEPTS
+
+
