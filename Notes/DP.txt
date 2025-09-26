@@ -1,0 +1,16 @@
+Dynamic Programming - Dynamic Programming is a problem-solving technique where complex problems are broken down smaller,overlapping subproblems, and solutions ti these suboroblems are stored to avoid redundant calculations,ultimately leading to efficient solutions.
+
+
+Intoduction to DP
+Top Down Memoization 
+Bottom Up Tabulation
+Fibonacci
+0-1 Knapsack 
+Take/Not Take Concept
+Subset Subproblems
+DP with Matrix
+Longest Increasing Subsequence
+Longest Common Subsequence
+Practice Problems
+
+
